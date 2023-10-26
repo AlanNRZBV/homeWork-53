@@ -8,7 +8,11 @@ interface TaskItem {
 }
 
 const App = () => {
-  const [tasks, setTasks] = useState<TaskItem[]>([]);
+  const [tasks, setTasks] = useState<TaskItem[]>([
+    { id: '1', text: 'DELETE ME' },
+    { id: '2', text: 'DONT DELETE ME' },
+    { id: '3', text: 'ME TOO' },
+  ]);
 
   const generateRndNumber = (): string => {
     const rndNumber = Math.floor(Math.random() * 1000);
